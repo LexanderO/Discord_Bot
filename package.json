@@ -1,0 +1,25 @@
+{
+  "name": "discord_bot",
+  "version": "1.0.0",
+  "description": "My Bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LexanderO/Discord_Bot.git"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "Lexanderow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LexanderO/Discord_Bot/issues"
+  },
+  "homepage": "https://github.com/LexanderO/Discord_Bot#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
