@@ -27,17 +27,25 @@ function processCommand(receivedMessage) {
     console.log("Command received: " + primaryCommand)
     console.log("Arguments: " + arguments) // There may not be any arguments
 
-    if (primaryCommand == "help") {
-        helpCommand(arguments, receivedMessage)
-    } else {
-        receivedMessage.channel.send("I don't understand the command. Try `!help`")
+    searhCommand(receivedMessage, primaryCommand, arguments);
+ 
+}
+
+function searhCommand(receivedMessage, primaryCommand, arguments){
+    switch(primaryCommand){
+        case "help" :
+            helpCommand(arguments, receivedMessage);
+            break;
+        default:
+            receivedMessage.channel.send("I don't understand the command. Try `!help`")
     }
+
 }
 
 function helpCommand(arguments, receivedMessage) {
     if (arguments.length > 0) {
         receivedMessage.channel.send("It looks like you might need help with " + arguments)
     } else {
-        
+        receivedMessage.channel.send("Here is the full list of commands")
     }
 }
