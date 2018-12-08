@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/LexanderO/Discord_Bot#readme",
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord.js": "^11.4.2",
+    "ffmpeg-binaries": "^4.0.0",
+    "opusscript": "0.0.6"
   }
 }
